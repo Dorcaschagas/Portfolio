@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body{
     flex-direction: column;
     color: #FF6400;
     font-family: sans-serif;
+    background-color: #000000;
 }
 
 
@@ -116,7 +119,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 900px;
+    /* max-width: 900px; */
 }
 
 .section{
@@ -200,8 +203,8 @@ main{
 
 
 .projectsBox{
-    /* padding-top: 20px; */
-    height: 150vh;
+    padding-top: 20px;
+    /* height: 150vh; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -221,11 +224,10 @@ main{
 }
 
 .projects{
-    border:1PX solid #FF6400;
     margin : auto ;
     width: 50vh;
     padding: 5vh;
-    box-shadow:1px 1px 10px #FF7F3B;
+    /* box-shadow: 0px 0px 1px 0px #FF7F3B; */
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -280,4 +282,43 @@ main{
     .hamburguer{
         z-index: 1;
     }
+}
+
+.sectionParalax{
+    width: 100vw;
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.sectionParalax:nth-of-type(1){
+    background-image: url(img/i.webp);
+    height: 300px;
+}
+
+.sectionParalax:nth-of-type(2){
+    /* height: 150vh; */
+}
+.sectionParalax:nth-of-type(3){
+    background-image: url(img/i2.webp);
+    height: 300px;
+}
+
+.sectionParalax:nth-of-type(4){
+    
+}
+.sectionParalax:nth-of-type(5){
+    background-image: url(img/1381689.png);
+    height: 300px;
+    background-position: center bottom;
+    background-size: 100% 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Dancing Script', cursive, 'Poppins', sans-serif;
+    padding: 25px;
 }
