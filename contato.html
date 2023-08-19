@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="index" href="./">Dorcas Chagas</a>
+            
+            <ul class="nav-list">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li> <a href="projetos.html">Projetos</a></li>
+                <li><a href="./">Início</a></li>
+            </ul>
+            <button class="hamburguer"> </button>
+        </nav>
+    </header>
+    <main>
+        <div class="primeira">
+            <div class="primeiraUm" data-aos="fade-right">
+                <div class="title">
+                    <h1>Contato</h1>
+                    <p>Entre em contato para mais informações</p>
+                </div>
+                <div class="socialMedia">
+                    <a href="#">Dorcaspereira30@gmail.com</a>
+                    <ul class="list">
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="imageUm" data-aos="fade-left"></div>
+        </div>
+        <form class="segunda" action="https://api.staticforms.xyz/submit" method="post">
+            <div class="input" data-aos="fade-right">
+                <input type="hidden" name="accessKey" value="60fc4f2d-b10b-43ae-95a9-ebc1642cbfce">
+                <label>Nome</label>
+                <input placeholder="Seu nome" type="text" tabindex="0" name="name" required>
+
+                <label>Seu email*</label>
+                <input placeholder="Seu endereço de email" type="text" tabindex="0" name="email" required>
+
+                <label class="input__label--light">Mensagem*</label>
+                <textarea placeholder="Digite sua mensagem"type="text" tabindex="0" name="mensage" cols="30" rows="10" required></textarea>
+
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/agradecimento.html">
+
+                <button class="submit" type="submit">Enviar</button>
+
+            </div>
+            <div class="imageDois" data-aos="fade-left"></div>
+        </form>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
