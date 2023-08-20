@@ -210,17 +210,17 @@ label{
 }
 
 .imageUm{
-    background-image:url(img/i2.webp) ;
+    background-image:url(img/137.png) ;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: 101% 101%;
 }
 
 .imageDois{
-    background-image:url(img/i.webp) ;
+    background-image:url(img/pc.webp) ;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: 101% 101%;
 }
 
 @media ( max-width:500px){
