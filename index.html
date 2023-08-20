@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Landing Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -12,10 +12,9 @@
     <header>
         <nav class="nav">
             <a class="index" href="./">Dorcas Chagas</a>
-            
             <ul class="nav-list">
                 <li><a href="./">Início</a></li>
-                <li><a onclick="scrollToTop()" >Sobre</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li> <a href="projetos.html">Projetos</a></li>
             </ul>
@@ -25,15 +24,15 @@
     
     <main>
         <h1 class="title" data-aos="fade">Dorcas Chagas</h1>
-        <h4>Desenvolvedor Web <span>Front End</span></h4>
-
         <section class="sectionParalax"></section>
         <section class="sectionParalax">
             <section class="section">
                 <div class="boxPresentation" data-aos="fade-right">
-                    <h2 class="information" >informações</h2>
+                    <h4>Desenvolvedora Web <span>Front End</span></h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, atque quam tenetur officia, voluptatum quaerat quia quibusdam cumque, eligendi placeat sequi repellat repellendus impedit! Odit vel ex quae nam cumque.
+                        Olá, seja bem-vindo ao meu portifólio!
+                        <br><br>
+                        Sou estudante do curso de Análise e Desenvolvimento de Sistemas, e Tenho conhecimentos em: <strong>(HTML, CSS, JAVASCRIPT, SQL e REACTJS).</strong>
                     </p>
                     <div class="button">
                         <button class="socialMedia"><a href="https://www.linkedin.com/in/dorcas-chagas/">LinkedIn</a></button>
@@ -41,17 +40,19 @@
                     </div>
                 </div>
                 <div id="top" class="about" data-aos="fade-left">
-                    <h1>sobre mim</h1>
+                    <h1 class="h1">Sobre mim</h1>
                     <p>
-                        Olá, meu nome é Dorcas e sou apaixonada por tecnologia. 
-                        <br><br>Desde que era criança, sempre fui curiosa sobre como as coisas funcionam e como podemos criar novas coisas. Em 2022, comecei a ouvir falar sobre programação de alguns amigos que já trabalham na área. Resolvi então juntar o útil ao agradável e comecei a aprender a programar. Foi aí que descobri que minha paixão é programar! Dia após dia, busco mais conhecimentos e sempre me deparo com novas descobertas espetaculares.
-                    </p>
+                        Sou apaixonada por tecnologia desde sempre, mas em 2021, comecei a me identificar ainda mais e quis conhecer mais ssobre o assunto. Foi quando comecei a fazer cursos relacionados com o <strong>Desenvolvimento Web</strong>.
 
+                        Estou sempre em busca de novos desafios e aprendizados. Sou uma pessoa proativa, organizada e com foco em resultados.
+                    </p>
                     <p>
-                        tecnologias e linguagem nas quais tenho conhecimentos.
+                        Tecnologias e linguagens nas quais tenho conhecimentos.
                     </p>
                     <div class="conhecimentos">
-                        <img src="img/triade.png" alt="">
+                        <img style="width: 175px;" src="img/triade.png" alt="">
+                        <img style="width: 125px;" src="img/reactjs.png" alt="">
+                        <img style="width: 75px;" src="img/python-logo-png-python-logo-png-and-vector-logo-img-4096x4553.png" alt="">
                     </div>
                 </div>
             </section>
@@ -61,37 +62,48 @@
             <section class="projectsBox">
                 <div class="box">
                     <div class="projects1" data-aos="fade-right">
-                        <h3>Projeto1</h3>
+                        <h3>Média de Notas UNIP</h3>
                         <div class="imgProject">
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta aspernatur aut.</p>
+                        <p>
+                            Projeto desenvolvido com base em um exercício da disciplina linguagem e técnicas de programação, calcular 2 notas e seus respectivos pesos e também a nota do PIM (trabalho semestral). Medias abaixo de 7, necessário fazer exame.
+                            OBS: np1 e np2 (nota prova 1 ou 2).
+                        </p>
                     </div>
                     <div class="projects2" data-aos="fade-left">
-                        <h3>projeto2</h3>
-                        <div class="imgProject">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta aspernatur aut.</p>
+                        <h3>Convite de Aniversário</h3>
+                        <div class="imgProject"></div>
+                        <p>
+                            Projeto que envia ao javascript o nome do usuário e de quem convidou, é feito o teste se os nomes estão na lista para que seja liberada a entrada.
+                        </p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="projects3" data-aos="fade-right">
-                        <h3>Projeto3</h3>
-                        <div class="imgProject">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta aspernatur aut.</p>
+                        <h3>Cubo em 3D</h3>
+                        <div class="imgProject"></div>
+                        <p>
+                            Cubo em 3d, trabalhando rotações e profundidade. foi usada apenas duas cores e muita imaginaçao.
+                        </p>
                     </div>
                     <div class="projects4" data-aos="fade-left">
-                        <h3>projeto4</h3>
-                        <div class="imgProject" >
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta aspernatur aut.</p>
+                        <h3>Formulário</h3>
+                        <div class="imgProject" ></div>
+                        <p>
+                            Formulário com imgens, responsível podendo se adaptar a telas de vários tamanhos. Pude explorar alguns inputs e brincar com alguns detalhes sem perder a formalidade.
+                        </p>
                     </div>
                 </div>
             </section>
         </section>
         <section class="sectionParalax">
             <h1>Texto de Agradecimento</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam reiciendis sunt laborum architecto, veniam velit quos explicabo dolorum, placeat est tempore modi magni sed? Quaerat cum iste aliquid velit.</p>
+            <p>
+                Obrigada por chegar até aqui, caso queira visitar também meu <a style="text-decoration: none; font-size: .8em;" href="https://github.com/Dorcaschagas">GitHub</a> ou <a style="text-decoration: none; font-size: .8em;" href="https://www.linkedin.com/in/dorcas-chagas/">linkedin</a>, será uma honra receber você em minhas redes sociais. <br><br>
+                <cite>
+                    "O segredo da vida é encontrar sua paixão e viver dela." - Paulo Coelho
+                </cite>
+            </p>
         </section>
     
 
