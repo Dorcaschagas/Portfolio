@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agradecimento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            margin:150px auto;
+            background-color: black;
+            color: orangered;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Obrigada pelo contato!</h1>
-    <p>Em breve entrarei em contato</p>
-    <a href="index.html"></a>
+    <header>
+        <nav class="nav">
+            <a class="index" href="./">Dorcas Chagas</a>
+            <ul class="nav-list">
+                <li><a href="./">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li> <a href="projetos.html">Projetos</a></li>
+            </ul>
+            <button class="hamburguer"> </button>
+        </nav>
+    </header>
+
+    <main data-aos="fade">
+        <h1>Obrigada pelo contato!</h1>
+        <p style="color: white; margin-bottom: 50px;">Responderei em breve .</p>
+        <button style="border: none; width: 200px; padding: 10px; border-radius: 10px; font-size: 1.2em; background-color: orangered;"><a style="text-decoration: none; color: black;" href="http://127.0.0.1:5501/contato.html"> voltar</a></button>
+    </main>
+
+    <footer style="margin-bottom: -90px;">
+        <div class="socialMedia">
+            <a href="contato.html">Dorcaspereira30@gmail.com</a>
+            <ul class="list">
+                <li><a href=" https://instagram.com/dorcaschagas?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=" https://github.com/Dorcaschagas"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dorcas-chagas/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

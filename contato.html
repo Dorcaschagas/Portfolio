@@ -5,8 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="contato.css">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .input{
+            width: 100%;
+            border: 1px solid;
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            max-width: 350px;
+            width: 350px;
+        }
+
+        .segunda{
+            margin-top: 100px;
+        }
+
+        input{
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+        }
+    
+         textarea{
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        label{
+            margin: 10px 0px;
+        }
+
+        .submit{
+            border-radius: 20px;
+            margin: 0 25%;
+            background-color: transparent;
+            color: white;
+            width: 50%;
+            padding: .5em;
+        }
+
+        .imageUm, .imageDois{
+            width: 350px;
+            height: 300px;
+            background-color: #FF6400;
+            border-radius: 10px;
+            margin-top: 100px;
+        }
+
+        .imageUm{
+            background-image:url(img/137.png) ;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 101% 101%;
+        }
+
+        .imageDois{
+            background-image:url(img/pc.webp) ;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 101% 101%;
+        }
+
+        .socialMedia{
+            display: flex;
+            flex-direction: column;
+            justify-content:start;
+            align-items: start;
+            width: 100%;
+            font-size: 1.3em;
+        }
+
+        .list li a{
+            font-size: 1.5em;
+        }
+
+        .title{
+            margin-left: 18px;
+        }
+
+        @media (min-width:750px){
+            .primeira, .segunda{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 35px;
+            }
+
+            .primeira{
+                margin-top: -40vh;
+            }
+
+            .segunda{
+                margin-top: -20vh;
+            }
+            
+            .imageUm, .imageDois{
+                margin-top: 80vh;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,6 +124,7 @@
             <button class="hamburguer"> </button>
         </nav>
     </header>
+
     <main>
         <div class="primeira">
             <div class="primeiraUm" data-aos="fade-right">
@@ -40,27 +143,24 @@
             </div>
             <div class="imageUm" data-aos="fade-left"></div>
         </div>
-        <form class="segunda" action="https://api.staticforms.xyz/submit" method="post">
-            <div class="input" data-aos="fade-right">
-                <input type="hidden" name="accessKey" value="60fc4f2d-b10b-43ae-95a9-ebc1642cbfce">
-                <label>Nome</label>
+        <div class="segunda" data-aos="fade-right">
+            <form class="input" action="https://formsubmit.co/dorcaspereira30@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/agradecimento.html">
+                <input type="hidden" name="_autoresponse" value="Mensagem recebida com sucesso, obrigada pelo contato e logo responderei.">
+                <input type="hidden" name="_captcha" value="false">
+                <label>Nome*</label>
                 <input placeholder="Seu nome" type="text" tabindex="0" name="name" required>
-
                 <label>Seu email*</label>
-                <input placeholder="Seu endereço de email" type="text" tabindex="0" name="email" required>
-
+                <input placeholder="Seu endereço de email" type="text" tabindex="0" name="E-mail" required>
+                <label>Assunto</label>
+                <input type="text" name="subject" placeholder="Assunto">
                 <label class="input__label--light">Mensagem*</label>
-                <textarea placeholder="Digite sua mensagem"type="text" tabindex="0" name="mensage" cols="30" rows="10" required></textarea>
-
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/agradecimento.html">
-
+                <textarea placeholder="Digite sua mensagem" type="text" tabindex="0" name="mensage" cols="30" rows="10" required></textarea>
                 <button class="submit" type="submit">Enviar</button>
-
-            </div>
+            </form>
             <div class="imageDois" data-aos="fade-left"></div>
-        </form>
+        </div>
     </main>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="index.js"></script>
 </body>
