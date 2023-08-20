@@ -1,3 +1,3 @@
 # Portifólio 
  
-https://dorcaschagas.github.io/LandingPage/
+https://dorcaschagas.github.io/Portifolio/
