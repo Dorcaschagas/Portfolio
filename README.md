@@ -1,3 +1,3 @@
 # Portifólio 
  
-https://dorcaschagas.github.io/portifolio/
+https://dorcaschagas.github.io/Portifolio/
