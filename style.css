@@ -233,7 +233,6 @@ main{
 
 .projectsBox{
     padding-top: 20px;
-    /* height: 150vh; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -251,7 +250,7 @@ main{
     width: 100%;
 }
 
-.projects1, .projects2, .projects3, .projects4{
+.projects1, .projects2, .projects3, .projects4, .projects5, .projects6, .projects7, .projects8{
     max-width: 80vh;
     border-radius: 5px;
     display: flex;
@@ -267,7 +266,7 @@ main{
     background-position: center center;
     background-size: 105% 105%;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-color: lightgray;
     border-radius: 5%;
     overflow: hidden;
@@ -284,15 +283,10 @@ main{
 
 .projects3 .imgProject{
     background-image: url(img/cubo.png);
-    /* background-size: 100% 100%; */
 }
 
 .projects4 .imgProject{
     background-image: url(img/fomr.png);
-}
-
-.projects3 .imgProject{
-    /* background-color: black; */
 }
 
 @media ( max-width:700px){
@@ -304,13 +298,6 @@ main{
         flex-direction: column;
     }
 
-    .projectsBox{
-        padding: 5px;
-    }
-    .projects{
-        width: 97vw;
-    }
-
     .box{
         display: flex;
         flex-direction: column;
@@ -318,6 +305,10 @@ main{
 }
 
 @media ( max-width:500px){
+    .imgProject{
+        width: 100vw;
+        height: 35vh;
+    }
     .nav-list{
         position: absolute;
         align-items: center;
